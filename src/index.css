@@ -1,0 +1,168 @@
+/* index.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(33, 31, 31);
+  color: white;
+}
+
+.bigpic {
+  width: 80%;
+  padding: 0 100px;
+}
+
+.app-container {
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+
+.header {
+  background-color: #4b0082; /* Dark purple for the header */
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
+  margin-bottom: 300px ;
+}
+/* remove margin bottom */
+.logowrapper {
+flex:1;
+
+}
+
+.logo {
+width: 100px;
+padding: 10px;
+padding-left: 50px;
+}
+
+.main-heading {
+  margin: 0;
+}
+
+.main-content {
+  padding: 0 30px;
+}
+
+.section-heading {
+  color: #85bcda; /* Dark purple for section headings 4b0082 */
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.section-heading1 {
+  color: #85bcda; /* Dark purple for section headings 4b0082 */
+  text-align: center;
+  padding: 0 20px;
+  letter-spacing: 3px;
+
+}
+
+.section-heading2 {
+  color: #85bcda; /* Dark purple for section headings 4b0082 */
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.section-heading3 {
+  color: #85bcda; /* Dark purple for section headings 4b0082 */
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.section-text {
+  color: white;
+  padding: 4%;
+  text-align: center;
+  line-height: 2.2;
+}
+
+.footer {
+  margin-top: 20px;
+  background-color: #4b0082; /* Dark purple for the footer */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px -3px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+/* Add hover effect to social links */
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+.contact-section {
+  margin-top: 20px;
+}
+
+.contact-section h2 {
+  color: #4b0082; /* Dark purple for the "Contact" heading */
+}
+
+.contact-section a {
+  color: white;
+  text-decoration: underline;
+}
+
+.contact-section a:hover {
+  text-decoration: none; /* Remove underline on hover for social links */
+}
+.button-section {
+  margin-top: 20px;
+}
+
+.button-section button {
+  padding: 10px;
+  margin: 0 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.yellow-button {
+  background-color: #ffd700; /* Yellow */
+  color: black;
+}
+
+.white-button {
+  background-color: white;
+  color: #333;
+}
+
+.green-button {
+  background-color: #00ff00; /* Green */
+  color: black;
+}
+
+.blue-button {
+  background-color: #0000ff; /* Blue */
+  color: white;
+}
+
+.button-section button:hover {
+  opacity: 0.8; /* Reduce opacity on hover for a subtle effect */
+}
+
+.what-we-do-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.grid-3-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  line-height: 2;
+}
