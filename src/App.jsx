@@ -1,7 +1,12 @@
 import React from 'react';
 import './index.css';
 import novaNoireLogo from './assets/novanoire.png'
+import facebookLogo from './assets/facebook logo.png'
+import instagramLogo from './assets/instagram logo.png'
 import peace from './assets/peacelove.png'
+import bookLogo from './assets/book.png'
+import networkLogo from './assets/network.png'
+import resourceLogo from './assets/resource.png'
 // import BookIcon from './assets/bookicon.jsx'
 
 
@@ -20,12 +25,7 @@ export default function App() {
 
 
   return (
-    <div className="app-container">
-      <header className="header">
-       <div className = "logowrapper" > <img className= "logo" src={novaNoireLogo} alt="Nova Noire Tech" /></div>
-        <div className="navwrapper"> navhere </div>
-      </header>
-      <main className="main-content">
+    <>
         <div className='bigimg'> <img className="bigpic" src= {peace} alt= "Big Picture"/></div>
         <section className="mission-section">
           <h2 className="section-heading1">OUR MISSON</h2>
@@ -43,31 +43,21 @@ export default function App() {
         </section>
         <section className="what-we-do-section">
           <h2 className="section-heading">What We Do</h2>
-          <div>
-          <p className="section-text">
-          At Nova Noire Tech, we offer a comprehensive range of initiatives to help Black women thrive in the tech industry. Our programs include:
-          </p>
-          <div className="grid-3-column"> <div> Resources and Support: Providing access to essential resources, and networking opportunities tailored to the needs of Black women in tech. </div> <div>Educational Courses: Offering a variety of educational courses designed to enhance technical skills, professional development, and leadership capabilities, empowering Black women at every career stage.</div><div>Black Women-Owned Tech Companies: Facilitating connections and collaborations with Black women-owned tech companies, fostering a supportive ecosystem within the industry.</div></div>
+          <div className="grid-3-column">
+            <div className='g1'>
+              <img src={bookLogo} alt="bookjoint" />
+              <p>Resources and Support: Providing access to essential resources, and networking opportunities tailored to the needs of Black women in tech.</p>
+            </div>
+            <div className='g2'>
+              <img src={resourceLogo} alt="resourcejoint" />
+              <p>Educational Courses: Offering a variety of educational courses designed to enhance technical skills, professional development, and leadership capabilities, empowering Black women at every career stage.</p>
+            </div>
+            <div className='g3'>
+              <img src={networkLogo} alt="networklogo" />
+              <p>Black Women-Owned Tech Companies: Facilitating connections and collaborations with Black women-owned tech companies, fostering a supportive ecosystem within the industry.</p>
+            </div>
           </div>
         </section>
-      </main>
-      <footer className="footer">
-        <div className="contact-section">
-          <h2 className="section-heading">Contact</h2>
-          <p className="section-text">
-            Connect with us on social media:<br />
-            <a href={instagramLink} target="_blank" rel="noopener noreferrer">
-              Instagram
-            </a>
-            {' | '}
-            <a href={facebookLink} target="_blank" rel="noopener noreferrer">
-              Facebook
-            </a>
-          </p>
-        </div>
-        <div>
-        </div>
-      </footer>
-    </div>
+      </>
   );
 }
